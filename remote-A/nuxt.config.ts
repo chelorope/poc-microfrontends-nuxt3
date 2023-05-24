@@ -14,17 +14,17 @@ export default defineNuxtConfig({
         name: 'home',
         filename: 'remoteEntry.js',
         exposes: {
-          './Button': './src/components/Button.vue',
+          './Button': './components/Button.vue',
         },
-        shared: {
-          vue: {},
-          pinia: {},
-          myStore: {
-            packagePath: './src/store.js',
-            import: false,
-            generate: false,
-          },
-        },
+        // shared: {
+        //   vue: {},
+        //   pinia: {},
+          // myStore: {
+          //   packagePath: './src/store.js',
+          //   import: false,
+          //   generate: false,
+          // },
+        // },
       }),
       topLevelAwait({
         // The export name of top-level await promise for each chunk module

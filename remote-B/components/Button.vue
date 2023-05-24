@@ -10,19 +10,19 @@
 </template>
 
 <script>
-import {counterState} from '../store'
+// import {counterState} from '../store'
 
 export default {
   setup() {
-    // const counterState = () => {
-    //   const state = reactive({
-    //     count: 0,
-    //     increase() {
-    //       state.count++;
-    //     },
-    //   });
-    //   return state;
-    // };
+    const counterState = () => {
+      const state = reactive({
+        count: 0,
+        increase() {
+          state.count++;
+        },
+      });
+      return state;
+    };
     let counter = counterState();
     return { counter };
   },

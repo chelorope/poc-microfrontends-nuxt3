@@ -12,17 +12,17 @@
 </template>
 
 <script>
-import {counterState} from '../store'
+// import {counterState} from '../store'
 
 export default {
   setup() {
-    // const counterState = () => {
-    //   const count = ref(0);
-    //   const increase = () => {
-    //     count.value++;
-    //   };
-    //   return {count, increase};
-    // };
+    const counterState = () => {
+      const count = ref(0);
+      const increase = () => {
+        count.value++;
+      };
+      return {count, increase};
+    };
     let counter = counterState();
     return {counter};
   }
