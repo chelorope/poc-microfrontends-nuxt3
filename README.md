@@ -1,0 +1,1 @@
+# poc-microfrontends-nuxt3
