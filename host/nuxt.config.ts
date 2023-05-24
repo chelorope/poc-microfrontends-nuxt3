@@ -1,4 +1,3 @@
-import vue from '@vitejs/plugin-vue'
 import federation from '@originjs/vite-plugin-federation'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
@@ -8,7 +7,6 @@ export default defineNuxtConfig({
         },
         cacheDir: 'node_modules/.cacheDir',
         plugins: [
-            vue(),
             federation({
                 name: 'layout',
                 filename: 'remoteEntry.js',
@@ -26,12 +24,12 @@ export default defineNuxtConfig({
                     vue:{
                         // This is an invalid configuration, because the generate attribute is not supported on the host side
                         generate:false
-                    },
-                    pinia:{
-                    },
-                    myStore: {
-                        packagePath: './src/store.js'
                     }
+                    // pinia:{
+                    // },
+                    // myStore: {
+                    //     packagePath: './src/store.js'
+                    // }
                 }
             })
         ],
