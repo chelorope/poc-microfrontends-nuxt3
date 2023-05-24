@@ -3,6 +3,9 @@ import federation from '@originjs/vite-plugin-federation';
 import topLevelAwait from 'vite-plugin-top-level-await';
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  devServer: {
+    port: 5002,
+  },
   vite: {
     plugins: [
       vue(),
