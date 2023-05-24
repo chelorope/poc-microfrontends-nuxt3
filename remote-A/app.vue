@@ -1,7 +1,14 @@
 <template>
-  <Button />
+  <Button/>
 </template>
 
-<script setup>
+<script>
 import Button from "./components/Button.vue";
+
+export default {
+  components: {
+    Button,
+  },
+};
 </script>
+
