@@ -1,5 +1,5 @@
 
-import vue from '@vitejs/plugin-vue'
+// import vue from '@vitejs/plugin-vue'
 import federation from '@originjs/vite-plugin-federation'
 import topLevelAwait from 'vite-plugin-top-level-await'
 // https://nuxt.com/docs/api/configuration/nuxt-config
@@ -9,7 +9,7 @@ export default defineNuxtConfig({
   },
   vite: {
     plugins: [
-      vue(),
+      // vue(),
       federation({
         name: 'home',
         filename: 'remoteEntry.js',
